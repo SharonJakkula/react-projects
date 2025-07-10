@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  margin: 6px 0;
+  height: 40px;
+  width: 350px;
+  padding: 0.4em;
+   background-color: #b8eaae; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: #e691ba; 
+}
+input[type="text"] {
+  padding: 6px;
+  font-size: 16px;
+  width: 350px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.7);
+}
+
+.emoji-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.emoji-background .emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp 6s infinite ease-in-out;
+  opacity: 0.6;
+}
+
+
+.emoji:nth-child(1) { left: 10%; animation-delay: 0s; }
+.emoji:nth-child(2) { left: 30%; animation-delay: 1s; }
+.emoji:nth-child(3) { left: 50%; animation-delay: 2s; }
+.emoji:nth-child(4) { left: 70%; animation-delay: 3s; }
+.emoji:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+@keyframes floatUp {
+  0% {
+    bottom: -40px;
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+    transform: scale(1);
+  }
+}
