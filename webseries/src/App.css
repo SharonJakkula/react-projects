@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+  
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Custom button style */
+.custom-btn {
+  background-color: #792d4f; /* Pink */
+  border: 1px solid #000000;
+  color: white;
+  padding: 6px 20px;
+  margin: 0.0001px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  color: #fff;
+}
